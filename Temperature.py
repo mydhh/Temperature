@@ -8,7 +8,6 @@
 # https://cdn.knmi.nl/knmi/map/page/klimatologie/gegevens/maandgegevens/mndgeg_270_tg.txt
 # https://cdn.knmi.nl/knmi/map/page/klimatologie/gegevens/maandgegevens/mndgeg_290_tg.txt
 # https://cdn.knmi.nl/knmi/map/page/klimatologie/gegevens/maandgegevens/mndgeg_370_tg.txt
-#
 
 from datetime import datetime
 
@@ -66,13 +65,13 @@ def main():
     x1 = []; x2 = []; x3 = [];
     y1 = []; y2 = []; y3 = [];
 
-    infile = "mndgeg_270_tg.txt"
+    infile = "data/mndgeg_270_tg.txt"
     readfile(infile, x1, y1, "270")
 
-    infile = "mndgeg_290_tg.txt"
+    infile = "data/mndgeg_290_tg.txt"
     readfile(infile, x2, y2, "290")
 
-    infile = "mndgeg_370_tg.txt"
+    infile = "data/mndgeg_370_tg.txt"
     readfile(infile, x3, y3, "370")
 
     # Create a graph
