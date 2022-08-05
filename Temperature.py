@@ -85,6 +85,7 @@ def main():
     yearsFmt = mdates.DateFormatter('%Y')
     ax.xaxis.set_major_locator(years)
     ax.xaxis.set_major_formatter(yearsFmt)
+    ax.xaxis.set_minor_locator(mdates.YearLocator(1))
 
     # Format the labels
     plt.xlabel('Tijd')
